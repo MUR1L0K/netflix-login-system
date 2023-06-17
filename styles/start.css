@@ -79,8 +79,8 @@ header a {
 }
 #SecondSection {
   padding-top: 20px;
-  margin-left: 30px;
   color: white;
+  margin: 10px 30px 50px 30px;
 }
 .moviesDisplay {
   padding-top: 10px;
@@ -89,8 +89,17 @@ header a {
   gap: 10px;
   align-items: center;
 }
+.imgs {
+  width: 240px;
+  height: 150px;
+}
 .moviesDisplay img {
   width: 210px;
+}
+.moviesDisplay img:hover {
+  width: 240px;
+  height: 150px;
+  cursor: pointer;
 }
 .movieDisplayTitles {
   padding-top: 40px;
