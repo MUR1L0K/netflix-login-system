@@ -78,5 +78,23 @@ header a {
   background-color: rgba(255, 255, 255, 0.167);
 }
 #SecondSection {
+  padding-top: 20px;
+  margin-left: 30px;
   color: white;
+}
+.moviesDisplay {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.moviesDisplay img {
+  width: 210px;
+}
+.movieDisplayTitles {
+  padding-top: 40px;
+}
+.keepWatchingMovies {
+  border-bottom: 4px solid red;
 }

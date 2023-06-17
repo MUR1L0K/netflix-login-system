@@ -1,3 +1,4 @@
+let apiKey = "Ep3hHKfFfaBL3jqIrcvMk6KZNmmJyjzM";
 let currentMovie = 0;
 let animated = document.getElementById("animatedSection");
 let title = document.getElementById("animatedSectionh1");
