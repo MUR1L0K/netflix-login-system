@@ -31,7 +31,7 @@ header a {
   background: url("../imgs/moviePics/quarterback.webp") center center no-repeat
     fixed;
   background-size: cover;
-  height: 105vh;
+  height: 100vh;
   transition: 0.9s;
 }
 #animatedSection-text {
@@ -96,9 +96,11 @@ header a {
   transition: 1s;
 }
 .btn {
+  display: block;
   position: absolute;
   margin-left: 90px;
   top: 30%;
+  left: 100%;
   padding: 5px;
   font-size: 20px;
   font-weight: bold;
@@ -113,7 +115,7 @@ header a {
 .moviesDisplay {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  column-gap: 15px;
   align-items: center;
   flex-wrap: wrap;
   cursor: pointer;
@@ -124,7 +126,7 @@ header a {
 .imgs {
   position: relative;
   display: inline-block;
-  width: 210px;
+  width: 200px;
   height: 150px;
   cursor: pointer;
   transition: ease-in-out 1s;
@@ -136,7 +138,7 @@ header a {
   position: absolute;
   width: 210px;
   top: 99%;
-  left: 50%;
+  left: 52%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -161,8 +163,32 @@ header a {
 .keepWatchingMovies {
   border-bottom: 4px solid red;
 }
-
-@media (max-width: 500px) {
+@media (max-width: 1239px) {
+  .btn {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  #animatedSection {
+    height: 170vh;
+  }
+}
+@media (max-width: 1120px) {
+  .main {
+    height: 350px;
+  }
+}
+@media (max-width: 905px) {
+  .main {
+    height: 420px;
+  }
+}
+@media (max-width: 690px) {
+  .main {
+    height: 580px;
+  }
+}
+@media (max-width: 600px) {
   #header {
     display: block;
     margin: auto;
@@ -176,11 +202,46 @@ header a {
     padding: 0px 10px;
   }
   #animatedSection-text {
+    text-align: center;
     width: 90%;
     padding: 10px;
   }
   #animatedSectionSubTitle {
     width: 90%;
+  }
+  #animatedSection-btns {
+    padding-left: 20px;
+  }
+  .main {
+    height: 940px;
+  }
+  .slides {
+    position: relative;
+    text-align: center;
+  }
+  .btn {
+    display: none;
+  }
+  .moviesDisplay {
+    row-gap: 30px;
+    margin-left: 18px;
+  }
+  .movieDisplayTitles {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 490px) and (max-width: 600px) {
+  #animatedSection {
+    height: 130vh;
+  }
+  #SecondSection {
+    text-align: center;
+  }
+  .main {
+    height: 610px;
+  }
+  .capaMovie {
+    width: 200px;
   }
 }
 @media (max-width: 400px) {
@@ -188,6 +249,9 @@ header a {
     display: block;
     text-align: center;
     font-size: 12px;
+  }
+  #animatedSection {
+    height: 100vh;
   }
   #animatedSection-text h1 {
     font-size: 23px;
@@ -203,13 +267,14 @@ header a {
   #plusBtn {
     display: block;
     font-size: 10px;
+    margin: 5px 0px;
     padding: 7px;
   }
   #SecondSection {
     margin-left: 16px;
     margin-right: 8px;
   }
-  .moviesDisplay img {
+  .capaMovie {
     width: 190px;
     height: 130px;
     gap: 0px;
@@ -217,5 +282,19 @@ header a {
   .moviesDisplay img:hover {
     width: 190px;
     height: 145px;
+  }
+  .main {
+    height: 940px;
+  }
+  .slides {
+    position: relative;
+    text-align: center;
+  }
+  .moviesDisplay {
+    row-gap: 30px;
+    margin-left: 18px;
+  }
+  .movieDisplayTitles {
+    margin-bottom: 15px;
   }
 }

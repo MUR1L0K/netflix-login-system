@@ -10,6 +10,7 @@ body {
   background-image: url("../imgs/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 200vh;
 }
 header {
   display: flex;

@@ -90,9 +90,6 @@ form {
   header {
     text-align: center;
   }
-  main {
-    margin-top: 150px;
-  }
 }
 @media (max-width: 500px) {
   header {
@@ -100,7 +97,6 @@ form {
   }
   main {
     text-align: center;
-    margin-top: 150px;
     width: 280px;
   }
 }
