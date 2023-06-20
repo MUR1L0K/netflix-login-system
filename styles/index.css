@@ -85,3 +85,22 @@ form {
 #main-div-newUser p {
   color: rgba(255, 255, 255, 0.71);
 }
+
+@media (max-width: 1000px) {
+  header {
+    text-align: center;
+  }
+  main {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    text-align: center;
+  }
+  main {
+    text-align: center;
+    margin-top: 150px;
+    width: 280px;
+  }
+}

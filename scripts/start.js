@@ -11,12 +11,7 @@ function picChanger() {
     "imgs/moviePics/thedeppestbreath.webp",
     "imgs/moviePics/quarterback.webp",
   ];
-  let titles = [
-    "Birdbox Barcelona",
-    "The Witcher 2",
-    "Deppest Breath",
-    "Quarterback",
-  ];
+  let titles = ["Birdbox", "The Witcher", "Deppest Breath", "Quarterback"];
   let subtitles = [
     "Próximo filme de suspense de terror pós-apocalíptico que estreará no serviço de streaming Netflix em 14 de julho de 2023. É um spin-off do filme Bird Box de 2018, que foi adaptado do romance de 2014.",
     "O mutante Geralt de Rívia é um caçador de monstros que luta para encontrar seu lugar em um mundo onde as pessoas, muitas vezes, são mais perversas do que as criaturas selvagens.",
@@ -24,7 +19,7 @@ function picChanger() {
     "Três quarterbacks enfrentam sua última temporada de futebol americano no ensino médio. Os garotos tentam equilibrar suas vidas enquanto se preparam para o futebol universitário.",
   ];
   animated.style.background =
-    "url(" + imgs[currentMovie] + ") no-repeat center center fixed";
+    "url(" + imgs[currentMovie] + ") center center no-repeat fixed";
   showText(title, titles[currentMovie], 100);
   showText(subtitle, subtitles[currentMovie], 20);
   currentMovie++;
@@ -43,3 +38,28 @@ function showText(el, text, int) {
     el.innerHTML += next;
   }, int);
 }
+
+const slides = document.querySelectorAll(".slides");
+let counter = 0;
+
+slides.forEach((slide, index) => {
+  if (index % 2 == 0) {
+    slide.style.left = `${0 * 100}%`;
+  } else {
+    slide.style.left = `${1 * 100}%`;
+  }
+});
+const goPrev = () => {
+  counter--;
+  slideImage();
+};
+const goNext = () => {
+  counter++;
+  slideImage();
+};
+
+const slideImage = (ev) => {
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+};

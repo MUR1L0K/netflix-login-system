@@ -13,12 +13,13 @@
       <section id="animatedSection">
         <header id="header">
           <a href="index.html"
-            ><img src="imgs/netflix-logo.png" alt="Netflix-logo"
-          /></a>
+            ><img src="imgs/netflix-logo.png" alt="Netflix-logo" /
+            id="headerImg"></a
+          >
           <div id="headerBtns">
-            <a href="">Inicio</a>
-            <a href="">Séries</a>
-            <a href="">Filmes</a>
+            <a href="#animatedSection">Inicio</a>
+            <a href="#SecondSection">Séries</a>
+            <a href="#SecondSection">Filmes</a>
           </div>
         </header>
         <div id="animatedSection-text">
@@ -35,83 +36,364 @@
         </div>
       </section>
       <section id="SecondSection">
-        <div class="movieDisplayTitles">
-          <h3>Lançamentos</h3>
+        <div class="main">
+          <div class="movieDisplayTitles">
+            <h3>Lançamentos</h3>
+          </div>
+          <div class="moviesDisplay slides">
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/oldGuardian.jpg"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>The Old Guardian</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/quarterback.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Quarterback</span>
+                <img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/vendetta.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Vendetta</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/thewitcher02.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>The Witcher</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/thedeppestbreath.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Deppest Breath</span
+                ><img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+              <button onclick="goNext()" class="btn" id="2">></button>
+            </div>
+          </div>
+          <div class="moviesDisplay slides">
+            <div class="imgs">
+              <img src="imgs/moviePics/grayMan.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Gray Man</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/big4.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Big 4</span>
+                <img src="imgs/Indicativa/10.png" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/informer.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Informer</span>
+                <img src="imgs/Indicativa/18.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/birdbox.webp" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Birdbox</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/unforgivable.jpg"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Unforgivable</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+              <button onclick="goPrev()" class="btn" id="1">></button>
+            </div>
+          </div>
         </div>
-        <div class="moviesDisplay">
-          <div class="imgs">
-            <img src="imgs/moviePics/oldGuardian.jpg" alt="" />
+        <div>
+          <div class="movieDisplayTitles">
+            <h3>Sugestões</h3>
           </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/quarterback.webp" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/vendetta.jpg" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/thewitcher02.webp" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/thedeppestbreath.webp" alt="" />
-          </div>
-        </div>
-        <div class="movieDisplayTitles">
-          <h3>Continue Assistindo</h3>
-        </div>
-        <div class="moviesDisplay">
-          <div class="imgs">
-            <img
-              src="imgs/moviePics/big4.jpg"
-              alt=""
-              class="keepWatchingMovies"
-            />
-          </div>
-          <div class="imgs">
-            <img
-              src="imgs/moviePics/uncharted.jpg"
-              alt=""
-              class="keepWatchingMovies"
-            />
+          <div class="moviesDisplay keepWatching">
+            <div class="imgs">
+              <img src="imgs/moviePics/big4.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Big 4</span
+                ><img src="imgs/Indicativa/10.png" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/iceroad.jpeg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Ice Road</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/uncharted.jpg"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Uncharted</span
+                ><img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
           </div>
         </div>
-        <div class="movieDisplayTitles">
-          <h3>Em alta</h3>
+        <div class="main">
+          <div class="movieDisplayTitles">
+            <h3>Em alta</h3>
+          </div>
+          <div class="moviesDisplay slides">
+            <div class="imgs">
+              <img src="imgs/moviePics/vendetta.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Vendetta</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/quarterback.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Quarterback</span>
+                <img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/alive.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>No one Gets out Alive</span>
+                <img src="imgs/Indicativa/18.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/thewitcher02.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>The Witcher</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/grayMan.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Gray Man</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+              <button onclick="goNext()" class="btn" id="2">></button>
+            </div>
+          </div>
+          <div class="moviesDisplay slides">
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/oldGuardian.jpg"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>The Old Guardian</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/big4.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Big 4</span>
+                <img src="imgs/Indicativa/10.png" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/informer.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Informer</span>
+                <img src="imgs/Indicativa/18.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/birdbox.webp" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Birdbox</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/thedeppestbreath.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Deppest Breath</span
+                ><img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+              <button onclick="goPrev()" class="btn" id="2">></button>
+            </div>
+          </div>
         </div>
-        <div class="moviesDisplay">
-          <div class="imgs">
-            <img src="imgs/moviePics/uncharted.jpg" alt="" />
+        <div>
+          <div class="movieDisplayTitles">
+            <h3>Continue Assistindo</h3>
           </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/alive.jpg" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/birdbox.webp" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/grayMan.jpg" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/big4.jpg" alt="" />
+          <div class="moviesDisplay keepWatching">
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/big4.jpg"
+                alt=""
+                class="keepWatchingMovies capaMovie"
+              />
+              <div class="imgsText">
+                <span>The Big 4</span
+                ><img src="imgs/Indicativa/10.png" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/uncharted.jpg"
+                alt=""
+                class="keepWatchingMovies capaMovie"
+              />
+              <div class="imgsText">
+                <span>Uncharted</span
+                ><img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
           </div>
         </div>
-        <div class="movieDisplayTitles">
-          <h3>Populares na Netflix</h3>
-        </div>
-        <div class="moviesDisplay">
-          <div class="imgs">
-            <img src="imgs/moviePics/informer.jpg" alt="" />
+        <div class="main">
+          <div class="movieDisplayTitles">
+            <h3>Populares na Netflix</h3>
           </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/iceroad.jpeg" alt="" />
+          <div class="moviesDisplay slides">
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/oldGuardian.jpg"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>The Old Guardian</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/quarterback.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Quarterback</span>
+                <img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/vendetta.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Vendetta</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/thewitcher02.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>The Witcher</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/thedeppestbreath.webp"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Deppest Breath</span
+                ><img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+              <button onclick="goNext()" class="btn" id="3">></button>
+            </div>
           </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/big4.jpg" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/unforgivable.jpg" alt="" />
-          </div>
-          <div class="imgs">
-            <img src="imgs/moviePics/alive.jpg" alt="" />
+          <div class="moviesDisplay slides">
+            <div class="imgs">
+              <img src="imgs/moviePics/grayMan.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Gray Man</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img
+                src="imgs/moviePics/uncharted.jpg"
+                alt=""
+                class="capaMovie"
+              />
+              <div class="imgsText">
+                <span>Uncharted</span>
+                <img src="imgs/Indicativa/12.jpg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/iceroad.jpeg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Ice Road</span>
+                <img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/birdbox.webp" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>Birdbox</span
+                ><img src="imgs/Indicativa/16.jpeg" alt="" class="indicativa" />
+              </div>
+            </div>
+            <div class="imgs">
+              <img src="imgs/moviePics/informer.jpg" alt="" class="capaMovie" />
+              <div class="imgsText">
+                <span>The Informer</span
+                ><img src="imgs/Indicativa/18.jpg" alt="" class="indicativa" />
+              </div>
+              <button onclick="goPrev()" class="btn" id="3">></button>
+            </div>
           </div>
         </div>
       </section>

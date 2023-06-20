@@ -16,6 +16,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px;
+  flex-wrap: wrap;
 }
 header img {
   width: 200px;
@@ -69,4 +70,14 @@ section input[type="email"] {
   border: 1px solid white;
   border-radius: 5px;
   background-color: transparent;
+}
+@media (max-width: 500px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+  section {
+    margin-top: 50px;
+    width: 280px;
+  }
 }
